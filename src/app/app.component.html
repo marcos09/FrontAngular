@@ -1,3 +1,18 @@
 <h1>
-  {{title}}
+
+  {{title}} <br>
+
 </h1>
+  <app-navbar>
+  	
+  </app-navbar>
+{{nombre}}<br>
+
+<hr>
+  
+  <p *ngIf="lista.empty">No hay productos para comprar</p>
+  <p *ngFor="let elem of lista">{{elem.nombre}}</p>
+  <input type="text">
+  <button (click)="agregarProducto()">Agregar Producto</button>
+  <hr>
+	<app-footer></app-footer>
