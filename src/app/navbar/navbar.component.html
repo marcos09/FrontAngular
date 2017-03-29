@@ -1,7 +1,84 @@
-<p>
-  navbar works!
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">Cartelera Virtual</a>
+      <!--  <img src="/CarteleraVirtual/assets/img/unlp.png" alt="Logo de la UNLP">	-->
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Carteleras <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-submenu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Primer Año</a>
+            <ul class="dropdown-menu">
+              <li><a href="/CarteleraVirtual/cartelera/cartelera.jsp">materia de 1</a></li>
+              <li><a href="/CarteleraVirtual/cartelera/cartelera.jsp">materia de 1.1</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a  class="dropdown-toggle" data-toggle="dropdown">Segundo Año</a>
+            <ul class="dropdown-menu">
+              <li>materia de 2</li>
+              <li>materia de 2.1</li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tercer Año</a>
+            <ul class="dropdown-menu">
+              <li><a href="/CarteleraVirtual/cartelera/cartelera.jsp">materia de 3</a></li>
+              <li><a href="/CarteleraVirtual/cartelera/cartelera.jsp">materia de 3.1</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cuarto Año</a>
+            <ul class="dropdown-menu">
+              <li><a href="/CarteleraVirtual/cartelera/cartelera.jsp">materia de 4</a></li>
+              <li><a href="/CarteleraVirtual/cartelera/cartelera.jsp">materia de 4.1</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quinto Año</a>
+            <ul class="dropdown-menu">
+              <li><a href="/CarteleraVirtual/cartelera/cartelera.jsp">materia de 5</a></li>
+              <li><a href="/CarteleraVirtual/cartelera/cartelera.jsp">materia de 5.1</a></li>
+            </ul>
+          </li>  
+          <li role="separator" class="divider"></li>
+          <li class="dropdown-header">Otros</li>
+          <li><a href="#">Otra cartelera</a></li>                
+        </ul>
+      </li>
+      
+   
+</ul>
+<ul class="nav navbar-nav navbar-right">
+ <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+ 
+ 
+ <li>
+   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> <b>Iniciar Sesión</b></a>
+   <ul id="login-dp" class="dropdown-menu">
+     <li>
+      <div class="row">
+       <div class="col-md-12">
+        <form class="form" role="form" method="post" action="/CarteleraVirtual/Login" accept-charset="UTF-8" id="login-nav">
+        <div class="form-group">
+          <label class="sr-only" for="dni">DNI</label>
+          <input type="number" class="form-control" id="dni" name="dni" placeholder="Ingrese su DNI" required>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="password">Contraseña</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block" style="background:#009688">Ingresar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</li>	       
+</ul>
+</li>
+</ul>
+</div>
 
-</p>
- <p *ngFor="let opcion of opciones">
-  {{opcion}}
-</p>
+</nav>
