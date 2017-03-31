@@ -13,11 +13,14 @@ export class CarteleraService {
   
   private http: Http;
   private carteleraService: CarteleraService;
-  obtenerCarteleras(): Observable<Response> {  
-  	 console.log("Entré a la funcion");
+
+  public obtenerCarteleras(): Observable<Response> {  	 
 	 return this.http.get('localhost:8080/carteleras');
-  // En este momento aún no se efectuó la llamada
+  //En este momento aún no se efectuó la llamada
 }
+	public getTexto(): String {
+		return "Este es el texto proporcionado por el servicio";
+	}
 
 
 }

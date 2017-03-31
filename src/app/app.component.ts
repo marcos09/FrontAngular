@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+import {Http} from "@angular/http";
 
-import {CarteleraService} from './cartelera.service';
+//import {CarteleraService} from './cartelera.service';
 
 
 
@@ -8,7 +9,7 @@ import {CarteleraService} from './cartelera.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers:[CarteleraService]
+  //providers:[CarteleraService, Http]
 })
 export class AppComponent {
   title = 'Bienvenido a la cartelera';
@@ -18,7 +19,7 @@ export class AppComponent {
   user: User = {name: 'Marcos', id:1, isLogin:false};
 
 
-  constructor(private _carteleraService: CarteleraService){
+  constructor(){
     //Ver bien esto
   }
 }
