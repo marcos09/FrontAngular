@@ -13,12 +13,20 @@ import 'rxjs/add/operator/catch';
 @Injectable()
 export class CarteleraService {
 
+   	headers;
+   	options;
 
-  constructor(private http: Http) { }
 
+	constructor(private http: Http) {
+      this.headers = new Headers({ 'Access-Control-Allow-Origin': '*' });
+      
+      this.options = new RequestOptions({ headers: this.headers }); // Create a request option
+
+
+   }
 	public obtenerCarteleras(): Observable<Cartelera[]> {  	 
 	 	console.log("Estoy en el servicio por hacer el get");
-  		return this.http.get("../../localhost:8080/CarteleraVirtual/carteleras").map((res:Response) => res.json());
+  		return this.http.get("http:\/\/localhost:8080/CarteleraVirtual/carteleras", options).map((res:Response) => res.json());
 
 	}
 
