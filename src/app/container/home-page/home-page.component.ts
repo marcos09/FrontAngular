@@ -15,13 +15,9 @@ export class HomePageComponent {
   carteleras: Cartelera[];
   texto: string;
   constructor(private _carteleraService: CarteleraService) {
-    console.log("Estoy en el constructor del HomePageComponent");
+
   }      
   ngOnInit(){
-    console.log("Estoy en el OnInit de HomePageComponent");
     this._carteleraService.obtenerCarteleras().subscribe(        carteleras => this.carteleras = carteleras);
-    console.log("Terminé supuestamente el pedido http");
-    
-
   }
 } 
