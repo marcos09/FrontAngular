@@ -9,12 +9,12 @@ import {Observable} from "rxjs/Observable";
 export class CarteleraService {
 
 
-  constructor() { }
+  constructor(  private http: Http) {}
   
-  private http: Http;
   private carteleraService: CarteleraService;
+
+  
   obtenerCarteleras(): Observable<Response> {  
-  	 console.log("Entré a la funcion");
 	 return this.http.get('localhost:8080/carteleras');
   // En este momento aún no se efectuó la llamada
 }

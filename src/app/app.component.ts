@@ -20,19 +20,5 @@ export class AppComponent {
 
 
   constructor(){
-    //Ver bien esto
   }
 }
-export class Cartelera {
-    name: string;
-    description: string;
-}
-export class User {
-
-  id: number;
-  name: string;
-  isLogin: boolean;
-
-}
- 
-//Podríamos crear un arreglo de carteleras, publicaciones o lo que fuere.
