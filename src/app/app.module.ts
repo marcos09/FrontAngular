@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AlertModule } from 'ng2-bootstrap';
 import { ContainerComponent } from './container/container.component';
 import { HomePageComponent } from './container/home-page/home-page.component';
+import { CarrouselBlackComponent } from './container/home-page/carrousel-black/carrousel-black.component';
+import { CarrouselWhiteComponent } from './container/home-page/carrousel-white/carrousel-white.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HomePageComponent } from './container/home-page/home-page.component';
     NavbarComponent,
     FooterComponent,
     ContainerComponent,
-    HomePageComponent
+    HomePageComponent,
+    CarrouselBlackComponent,
+    CarrouselWhiteComponent
   ],
   imports: [
     BrowserModule,

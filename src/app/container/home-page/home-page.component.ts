@@ -14,6 +14,9 @@ export class HomePageComponent {
 
   carteleras: Cartelera[];
   texto: string;
+
+  carrousel = new Boolean(false);
+
   constructor(private _carteleraService: CarteleraService) {
 
   }      
