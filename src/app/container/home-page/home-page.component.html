@@ -1,7 +1,7 @@
   <div *ngFor="let cartelera of carteleras">
-    <app-carrousel-white *ngIf="carrousel"  [cartelera]="cartelera"></app-carrousel-white>
+    <app-carrousel-white [cartelera]="cartelera"></app-carrousel-white>
 
-    <app-carrousel-black *ngIf="!carrousel" [cartelera]="cartelera"></app-carrousel-black>
+    <app-carrousel-black [cartelera]="cartelera"></app-carrousel-black>
   </div>
 
 

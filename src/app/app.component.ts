@@ -16,8 +16,6 @@ export class AppComponent {
   name ='Este es el nombre de mi aplicacion';
   template = 'home';
   navbar = 'notLogin';
-  user: User = {name: 'Marcos', id:1, isLogin:false};
-
 
   constructor(){
   }

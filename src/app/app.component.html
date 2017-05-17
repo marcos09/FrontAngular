@@ -5,13 +5,9 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">    
 
-  <app-navbar *ngIf="template == 'home'">
-  	
-  </app-navbar>
+  	<app-navbar *ngIf="template == 'home'"></app-navbar>
 
-<h1>{{name}}</h1>
-<h2>Bienvenido {{user.name}}!</h2>
-<alert type="success">hello</alert>
+ 	<alert type="success">hello</alert>
   
-  <app-container *ngIf="template == 'home'"></app-container>
-	<app-footer></app-footer>
+  	<app-container *ngIf="template == 'home'"></app-container>
+  	<app-footer></app-footer>

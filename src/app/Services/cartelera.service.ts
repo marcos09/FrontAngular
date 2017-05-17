@@ -16,7 +16,7 @@ export class CarteleraService {
    	headers;
    	options;
 
-
+   	//Este es el que sirve
 	constructor(private http: Http) {
       
       //this.headers = new Headers({ 'Access-Control-Allow-Origin' :'*' });
@@ -25,7 +25,14 @@ export class CarteleraService {
 
    }
 	public obtenerCarteleras(): Observable<Cartelera[]> {  	 
+
   		return this.http.get("http:\/\/localhost:8080/CarteleraVirtual/carteleras").map((res:Response) => res.json());
+
+	}
+
+	public obtenerPublicacionesCarteleras(idCartelera): Observable<Cartelera[]> {  	 
+
+  		return this.http.get("http:\/\/localhost:8080/CarteleraVirtual/carteleras/publicaciones").map((res:Response) => res.json());
 
 	}
 

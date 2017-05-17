@@ -1,10 +1,14 @@
+import Publicacion from "./";
+
 export class Cartelera {
 	constructor(
-        public id: int, 
+        public id: number, 
         public nombreCartelera: string,
         public descripcion:string,
         public author: string, 
         public text:string,
-        public padre: int,
+        public padre: number,
+        public publicaciones: Publicacion[],
+        public carteleras: Cartelera[],
         ){}
 }
