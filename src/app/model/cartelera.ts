@@ -1,4 +1,4 @@
-import Publicacion from "./";
+import {Publicacion} from './publicacion' ;
 
 export class Cartelera {
 	constructor(

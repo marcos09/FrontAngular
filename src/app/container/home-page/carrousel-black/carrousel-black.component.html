@@ -5,11 +5,13 @@
 <p>{{cartelera.descripcion}}</p>
 </div>
 
+          <div *ngFor="let publicacion of cartelera.publicaciones">
+
 <div class="w3-quarter">
 <div class="w3-card-2 w3-white">
   <div class="w3-container">
-  <h3>Evento 1</h3>
-  <h4>Congreso de Software Libre</h4>
+  <h3>{{publicacion.titulo}}</h3>
+  <h4>{{publicacion.descripcion}}</h4>
   <p>Blablabla</p>
   <p>Blablabla</p>
   <p>Blablabla</p>
@@ -18,30 +20,5 @@
   </div>
 </div>
 
-<div class="w3-quarter">
-<div class="w3-card-2 w3-white">
-  <div class="w3-container">
- 
-  <h3>Evento 2</h3>
-  <h4>Inteligencia Artificial - Realidad Virtual</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card-2 w3-white">
-  <div class="w3-container">
-  <h3>Evento 3</h3>
-  <h4>Energias Verdes</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
 
 </div>

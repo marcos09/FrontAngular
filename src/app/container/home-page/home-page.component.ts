@@ -21,11 +21,7 @@ export class HomePageComponent {
 
   }      
   ngOnInit(){
+    
     this._carteleraService.obtenerCarteleras().subscribe(carteleras => this.carteleras = carteleras);
-    /*carteleras.forEach(function(value){
-      this._carteleraService.obtenerPublicacionesCarteleras(value.id).subscribe(carteleras => this.carteleras = carteleras);      
-    }
-      
-      );*/
   }
 } 
